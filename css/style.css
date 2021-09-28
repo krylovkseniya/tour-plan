@@ -207,6 +207,14 @@ img {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stars__img {
+  display: block;
+  margin-right: 3px;
 }
 
 .offer {
@@ -232,9 +240,14 @@ img {
   line-height: 10px;
 }
 
-.rating__counter {
+.rating__counter-now {
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__counter-all {
+  font-size: 10px;
+  line-height: 13px;
 }
 
 @media (max-width: 1200px) {
