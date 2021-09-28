@@ -154,7 +154,7 @@ img {
     line-height: 15px;
   }
   .navbar-menu__list {
-    padding: 22px 0;
+    padding: 22px 14px;
   }
   .search__input {
     width: 340px;
@@ -203,8 +203,15 @@ img {
 }
 
 @media (max-width: 576px) {
+  .container {
+    width: 87%;
+  }
   .logo {
     width: 99px;
+  }
+  .navbar-top {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 /*# sourceMappingURL=style.css.map */
