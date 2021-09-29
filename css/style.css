@@ -297,6 +297,14 @@ img {
   background-color: transparent;
 }
 
+.slider-button:active {
+  border: none;
+}
+
+.slider-button:visited {
+  border: none;
+}
+
 .slider-button_next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
