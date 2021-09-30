@@ -587,7 +587,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
@@ -736,9 +736,6 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .hotel__slider {
-    margin-bottom: 30px;
-  }
   .hotel-right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -751,10 +748,20 @@ img {
   }
   .slider {
     width: 100%;
+    margin-bottom: 30px;
   }
   .map {
     width: 340px;
     height: 210px;
+  }
+  .reviews-title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+    padding: 0 62px 30px;
   }
 }
 
@@ -861,6 +868,32 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .reviews-title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
+  }
+  .reviews-slider__item {
+    padding: 0 31px 36px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 45px;
+  }
+  .reviews-slider__button_prev {
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-left: -115px;
+  }
+  .reviews-slider__button_next {
+    right: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-right: -115px;
   }
 }
 

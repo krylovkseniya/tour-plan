@@ -31,8 +31,6 @@
         padding-bottom: 60px
         &-grid
             flex-direction: column
-        &__slider
-            margin-bottom: 30px
         &-right
             flex-direction: row
     .booking
@@ -40,9 +38,19 @@
         height: 210px
     .slider
         width: 100%
+        margin-bottom: 30px
     .map
         width: 340px
-        height: 210px      
+        height: 210px  
+    .reviews
+        &-title
+            font-size: 30px
+            line-height: 38px
+            margin-bottom: 50px
+        &-slider
+            &__item
+                max-width: 580px  
+                padding: 0 62px 30px  
             
 @media (max-width: 768px)
     .container
@@ -106,6 +114,27 @@
             width: 92%
             flex-direction: column
             align-items: flex-start
+    .reviews
+        &-title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 42px
+        &-slider
+            &__item
+                padding: 0 31px 36px
+                &::after, &::before
+                    display: none
+            &__button
+                top: 45px
+                &_prev
+                    left: 50%
+                    transform: translateY(-50%)
+                    margin-left: -115px
+                &_next
+                    right: 50%
+                    transform: translateY(-50%)
+                    margin-right: -115px
+                    
 
 @media (max-width: 576px)
     .container, .newsletter-wrapper
