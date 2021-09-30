@@ -643,8 +643,17 @@ img {
   .slider {
     height: 180px;
   }
+  .hotel-info {
+    padding-bottom: 38px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .hotel-right {
+    min-height: 403px;
+  }
+  .map {
+    height: 173px;
   }
 }
 /*# sourceMappingURL=style.css.map */
