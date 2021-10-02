@@ -679,7 +679,7 @@ img {
 
 .reviews-slider__button {
   position: absolute;
-  top: 33%;
+  top: 43%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 99;
@@ -776,6 +776,22 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+}
+
+.card__title_one {
+  max-width: 145px;
+}
+
+.card__title_two {
+  max-width: 153px;
+}
+
+.card__title_three {
+  max-width: 161px;
+}
+
+.card__title_four {
+  max-width: 200px;
 }
 
 .card__button {
@@ -1076,6 +1092,16 @@ img {
   }
   .card {
     width: 100%;
+  }
+  .card__first {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+  }
+  .card__second {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .activities__title {
     font-size: 18px;
