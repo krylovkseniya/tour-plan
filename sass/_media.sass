@@ -113,16 +113,52 @@
         &-bottom
             &__links
                 text-align: left
+    .modal
+        &__dialog
+            padding: 23px 78px
+        &__info
+            margin-top: 10px
             
 @media (max-width: 768px)
+    body
+        padding-top: 70px
     .container
         max-width: 576px
         width: 92%
     .navbar
-        &-menu, &__search, &__user
+        position: relative
+        &__search, &__user
+            &_hidden
+                display: none
+            &_visible
+                display: flex
+        &__user
+            flex-direction: column
+            justify-content: center
+        &-menu
             display: none
+            position: fixed
+            left: 0
+            right: 0
+            bottom: 0
+            top: 70px
+            &__list
+                flex-direction: column
+                padding-top: 30px
+            &__item
+                margin-bottom: 20px
+                &_visible
+                    display: block
+            &_visible
+                display: block
         &-top
             justify-content: space-between
+        &_fixed
+                position: fixed
+                top: 0
+                left: 0
+                right: 0
+                z-index: 99
     .menu
         &-burger
             display: flex
@@ -139,6 +175,12 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
+    .user
+        &__name
+            &_light
+                color: $light
+                margin-left: 0
+                margin-top: 10px
     .stars
         flex-basis: auto          
     .hotel
@@ -226,6 +268,11 @@
             flex-basis: 48%
         &__legal
             padding-left: 30px
+    .modal
+        &__dialog
+            padding: 23px 58px
+        &__button
+            width: 100%
                     
 
 @media (max-width: 576px)
@@ -237,6 +284,9 @@
         &-top
             padding-top: 26px
             padding-bottom: 26px
+    .search
+        &__input
+            width: 243px
     .slider
         height: 180px
     .hotel
@@ -343,11 +393,21 @@
         &__info
             padding-right: 50px
             margin-bottom: 15px
+    .modal
+        &__overlay
+            display: none
+        &__dialog
+            top: 0px
+            left: 0
+            right: 0
+            bottom: 0
+            transform: none
+            max-width: 100%
+            padding: 33px 88px
+        &__close
+            right: 18px
+            top: 17px
 
-        
-        
-          
-    
 
 @media (max-width: 340px)
     .reviews
@@ -356,3 +416,6 @@
         &-slider
             &__text
                 text-align: left
+    .modal
+        &__button
+            min-width: 144px

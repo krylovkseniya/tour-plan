@@ -11,19 +11,19 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="navbar">
+        <header class="navbar navbar_fixed">
             <div class="container">
                 <div class="navbar-top">
                     <a href="#" class="logo">
                         <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
                     </a>
-                    <form action="#" class="search navbar__search">
+                    <form action="#" class="search navbar__search navbar__search_hidden">
                         <input type="text" class="search__input" placeholder="Search Location">
                         <button class="search__button">
                             <img src="img/search.svg" alt="Icon: search">
                         </button>
                     </form>
-                    <a href="#" class="user navbar__user">
+                    <a href="#" class="user navbar__user navbar__user_hidden">
                         <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
                         <span class="user__name">Nathan</span>
                     </a>
@@ -38,6 +38,20 @@
             <nav class="navbar-menu">
                 <div class="container">
                     <ul class="navbar-menu__list">
+                        <li class="navbar-menu__item navbar-menu__item_visible">
+                            <a href="#" class="user navbar__user navbar__user_visible">
+                                <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
+                                <span class="user__name user__name_light">Nathan</span>
+                            </a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item_visible">
+                            <form action="#" class="search navbar__search navbar__search_visible">
+                                <input type="text" class="search__input" placeholder="Search Location">
+                                <button class="search__button">
+                                    <img src="img/search.svg" alt="Icon: search">
+                                </button>
+                            </form>
+                        </li>
                         <li class="navbar-menu__item">
                             <a href="#" class="navbar-menu__link">All Deals</a>
                         </li>
@@ -158,7 +172,7 @@
                                     <span class="booking__num">12100</span>
                                 </a>
                             </div>
-                            <button class="button booking__button">View Other Options</button>
+                            <button data-toggle="modal" class="button booking__button">View Other Options</button>
                         </div>
                         <div class="map">
                             <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7679.127690470835!2d98.29079802580219!3d7.887575357370416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1632923184141!5m2!1sru!2sru" width="347" height="215" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -314,8 +328,8 @@
                     <span class="newsletter-title__strong">Newsletter</span>
                 </h2>
 
-                <form action="#" class="subscribe newsletter__subscribe">
-                    <input type="text" class="subscribe__input" placeholder="Your email address">
+                <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+                    <input name="email" type="email" class="subscribe__input" placeholder="Your email address">
                     <button class="subscribe__button">Send</button>
                 </form>
             </div>
@@ -552,10 +566,10 @@
 
                     <div class="footer__contact-form">
                         <h3 class="footer__title footer__title_mb">Send us a message</h3>
-                        <form action="#" class="footer__form">
-                            <input type="text" class="input footer__input" placeholder="Your Full Name*">
-                            <input type="tel" class="input footer__input" placeholder="Phone Number*">
-                            <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <form action="send.php" method="POST" class="footer__form">
+                            <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
+                            <input name="phone" type="tel" class="input footer__input" placeholder="Phone Number*">
+                            <textarea name="message" class="message footer__message" placeholder="Message"></textarea>
                             <button class="button footer__button" type="submit">Send</button>
                             <span class="footer__info">* Required Fields</span>
                         </form>
@@ -573,6 +587,26 @@
             </div>
         </footer>
 
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__dialog">
+                <div class="modal__close">
+                    <img src="img/close.svg" alt="Icon: close">
+                </div>
+
+                <h3 class="modal__title modal__title_mb">Booking</h3>
+                <form action="send.php" method="POST" class="modal__form">
+                    <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*">
+                    <input name="phone" type="tel" class="input modal__input" placeholder="Phone Number*">
+                    <input name="email" type="email" class="input modal__input" placeholder="Email*">
+                    <textarea name="message" class="message modal__message" placeholder="Message"></textarea>
+                    <button class="button modal__button" type="submit">Send</button>
+                    <span class="modal__info">* Required Fields</span>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/parallax.min.js"></script>
