@@ -60,4 +60,8 @@ $(document).ready(function () {
       closeModal()
     }
   });
+
+
+  // Обработка форм
+  $('.modal__form').validate();
 });
