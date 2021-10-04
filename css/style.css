@@ -1317,6 +1317,9 @@ img {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .footer__legal {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1506,6 +1509,7 @@ img {
     right: 0;
     bottom: 0;
     top: 70px;
+    overflow: auto;
   }
   .navbar-menu__list {
     -webkit-box-orient: vertical;
@@ -1768,6 +1772,9 @@ img {
   .footer__info {
     padding-right: 50px;
     margin-bottom: 15px;
+  }
+  .footer__icon-wrapper {
+    min-width: 24px;
   }
   .modal__dialog {
     padding: 23px 58px;

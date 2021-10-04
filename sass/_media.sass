@@ -15,36 +15,10 @@
                 &_one
                     width: 50%
     .footer
-        &-wrapper
-            grid-template-columns: repeat(6, 1fr)
-            grid-column-gap: 10px
-            grid-row-gap: 40px
-        &__logo
-            grid-row: 1 / 2
-            grid-column: span 2
-            max-width: 104px
-            max-height: 120px
-        &__social
-            &-network
-                grid-row: 1 / 2
-                grid-column: span 4
-                align-self: center
-        &__categories
-            grid-row: 2 / 3
-            grid-column: span 2
-        &__additional
-            grid-column: span 2
-        &__legal
-            grid-column: span 2
-        &__contact
-            &-details
-                grid-column: span 3
-                grid-row: 3
-            &-form
-                grid-column: span 3
-                grid-row: 3
         &__input
             flex-basis: 100%
+        &__legal
+            padding-left: 0
         
 
 @media (max-width: 992px)
@@ -110,6 +84,39 @@
             margin-bottom: 45px
     .footer
         padding-top: 73px
+        padding-bottom: 33px
+        &-wrapper
+            grid-template-columns: repeat(7, 1fr)
+            grid-column-gap: 10px
+            grid-row-gap: 40px
+        &__logo
+            grid-row: 1 / 2
+            grid-column: span 2
+            max-width: 104px
+            max-height: 120px
+        &__social
+            &-network
+                grid-row: 1 / 2
+                grid-column: span 4
+                align-self: center
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 2
+        &__additional
+            grid-column: span 3
+        &__legal
+            grid-column: span 2
+            padding-left: 0
+        &__contact
+            &-details
+                grid-column: span 5
+                grid-row: 3
+                margin-top: 20px
+            &-form
+                grid-column: span 5
+                grid-row: 4
+        &__input
+            flex-basis: 48%
         &-bottom
             &__links
                 text-align: left
@@ -142,6 +149,7 @@
             right: 0
             bottom: 0
             top: 70px
+            overflow: auto
             &__list
                 flex-direction: column
                 padding-top: 30px
@@ -256,18 +264,59 @@
         &-wrapper
             grid-gap: 20px
     .footer
-        padding-bottom: 33px
+        padding: 69px 0 21px 0
+        &-wrapper
+            grid-template-columns: 1fr
+            grid-row-gap: 30px
+            grid-column-gap: 0
+        &__logo
+            grid-row: 1
+            grid-column: 1
+            width: 104px
+        &__social
+            &-network
+                flex-direction: column
+                height: 66px
+                justify-content: space-between
+                grid-row: 2
+                grid-column: 1
+        &__legal
+            grid-row: 3
+            grid-column: 1
+            padding-left: 0
+        &__additional
+            grid-row: 4
+            grid-column: 1
+        &__categories
+            grid-row: 5
+            grid-column: 1
         &__contact
             &-details
-                grid-column: span 6
-                grid-row: 3
+                grid-column: 1
+                grid-row: 6
             &-form
-                grid-column: span 5
-                grid-row: 4
+                grid-row: 7
         &__input
-            flex-basis: 48%
-        &__legal
-            padding-left: 30px
+            flex-basis: 100%
+        &__title
+            &_mb
+                margin-bottom: 15px
+        &__button
+            order: 1
+        &-bottom
+            margin-top: 30px
+            &__links
+                padding-bottom: 32px
+            &__link
+                margin-right: 5px
+            &__img
+                left: 0
+        &__info
+            padding-right: 50px
+            margin-bottom: 15px
+        &__icon
+            &-wrapper
+                min-width: 24px
     .modal
         &__dialog
             padding: 23px 58px
@@ -343,56 +392,6 @@
             &__oldprice
                 &_one
                     margin-top: 24px
-    .footer
-        padding: 69px 0 21px 0
-        &-wrapper
-            grid-template-columns: 1fr
-            grid-row-gap: 30px
-        &__logo
-            grid-row: 1
-            grid-column: 1
-            width: 104px
-        &__social
-            &-network
-                flex-direction: column
-                height: 66px
-                justify-content: space-between
-                grid-row: 2
-                grid-column: 1
-        &__legal
-            grid-row: 3
-            grid-column: 1
-            padding-left: 0
-        &__additional
-            grid-row: 4
-            grid-column: 1
-        &__categories
-            grid-row: 5
-            grid-column: 1
-        &__contact
-            &-details
-                grid-column: 1
-                grid-row: 6
-            &-form
-                grid-row: 7
-        &__input
-            flex-basis: 100%
-        &__title
-            &_mb
-                margin-bottom: 15px
-        &__button
-            order: 1
-        &-bottom
-            margin-top: 30px
-            &__links
-                padding-bottom: 32px
-            &__link
-                margin-right: 5px
-            &__img
-                left: 0
-        &__info
-            padding-right: 50px
-            margin-bottom: 15px
     .modal
         &__overlay
             display: none
