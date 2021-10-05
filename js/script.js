@@ -77,6 +77,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone is required",
+          minlength: "Please enter full number"
         }
       }
     });

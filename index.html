@@ -577,11 +577,13 @@
                                 <input name="name" required minlength="2" type="text" class="input footer__input" placeholder="Your Full Name*">
                             </div>
                             <div class="footer__input-group">
-                                <input name="phone" required type="tel" class="input footer__input phone" placeholder="Phone Number*">
+                                <input name="phone" minlength="18" maxlength="18" required type="tel" class="input footer__input phone" placeholder="Phone Number*">
                             </div>
                             <textarea name="message" class="message footer__message" placeholder="Message"></textarea>
-                            <button class="button footer__button" type="submit">Send</button>
-                            <span class="footer__info">* Required Fields</span>
+                            <div class="footer__required-center">
+                                <button class="button footer__button" type="submit">Send</button>
+                                <span class="footer__info">* Required Fields</span>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -607,7 +609,7 @@
                 <h3 class="modal__title modal__title_mb">Booking</h3>
                 <form action="send.php" method="POST" class="form modal__form">
                     <input name="name" required minlength="2" type="text" class="input modal__input" placeholder="Your Full Name*">
-                    <input name="phone" required type="tel" class="input modal__input phone" placeholder="Phone Number*">
+                    <input name="phone" required minlength="18" maxlength="18" type="tel" class="input modal__input phone" placeholder="Phone Number*">
                     <input name="email" required type="email" class="input modal__input" placeholder="Email*">
                     <textarea name="message" class="message modal__message" placeholder="Message"></textarea>
                     <button class="button modal__button" type="submit">Send</button>

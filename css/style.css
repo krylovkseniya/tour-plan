@@ -29,7 +29,7 @@ img {
   border: none;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #0A223D;
   resize: none;
 }
 
@@ -549,9 +549,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -593,7 +593,7 @@ img {
   font-size: 14px;
   line-height: 18px;
   font-weight: 300;
-  color: #BDBDBD;
+  color: #0A223D;
 }
 
 .subscribe__input-group {
@@ -605,6 +605,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 285px;
+  color: #BDBDBD;
 }
 
 .subscribe__button {
@@ -1120,9 +1121,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1206,7 +1204,7 @@ img {
   height: 50px;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #0A223D;
 }
 
 .footer__input-group {
@@ -1261,6 +1259,20 @@ img {
   font-size: 14px;
   line-height: 160%;
   color: inherit;
+}
+
+.footer__required-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal {
@@ -1340,7 +1352,7 @@ img {
   height: 50px;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #0A223D;
 }
 
 .modal__message {
@@ -1846,6 +1858,9 @@ img {
   .footer__item_ml {
     margin-left: 24px;
   }
+  .footer__message {
+    margin-bottom: 15px;
+  }
   .modal__dialog {
     padding: 23px 58px;
   }
@@ -1971,6 +1986,15 @@ img {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .footer__required-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .footer__info {
     margin-bottom: 15px;
