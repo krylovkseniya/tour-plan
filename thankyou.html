@@ -102,6 +102,7 @@
                             <h1 class="hotel-name hotel-info__name">Спасибо! Сообщение отравлено</h1>
                         </div>
                         <p class="hotel-description">Скоро мы с Вами свяжемся!</p>
+                        <a href="index.html" class="button hotel-back">Back</a>
                     </div>
                 </div>
             </div>
@@ -171,13 +172,13 @@
                     <div class="footer__social-network">
                         <h3 class="footer__title footer__title_inline">Social Network</h3>
                         <div class="footer__social-links">
-                            <a href="#" class="footer__link">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__link">
                                 <img src="img/facebook.svg" alt="Icon: facebook">
                             </a>
-                            <a href="#" class="footer__link">
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__link">
                                 <img src="img/youtube.svg" alt="Icon: youtube">
                             </a>
-                            <a href="#" class="footer__link">
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__link">
                                 <img src="img/instagram.svg" alt="Icon: instagram">
                             </a>
                         </div>
@@ -213,19 +214,23 @@
                                 </div>
                                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States 
                             </li>
-                            <li class="footer__item footer__item_mb">
+                            <li class="footer__item">
                                 <div class="footer__icon-wrapper">
                                     <img class="footer__icon" src="img/phone-call.svg" alt="Icon: phone">
                                 </div>
-                                Tel (business hours) : 269 1500 <br>
-                                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-                                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                                <a class="footer__tel" href="tel:2691500">Tel (business hours) : 269&nbsp;1500 <br></a>
+                            </li>
+                            <li class="footer__item footer__item_ml">
+                                <a href="tel:52566138" class="footer__tel">Tel (hotline) Monday - Saturday: 52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00 pm) <br></a>
+                            </li>
+                            <li class="footer__item footer__item_mb footer__item_ml">
+                                <a href="tel:52566138" class="footer__tel">Tel (hotline) Sunday: 52&#8209;56&#8209;61&#8209;38 (08:00 am – 14:00 pm)</a>
                             </li>
                             <li class="footer__item footer__item_mb">
                                 <div class="footer__icon-wrapper">
                                     <img class="footer__icon" src="img/email.svg" alt="Icon: email">
                                 </div>
-                                cherly.lawson@example.com
+                                <a class="footer__mail" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
                             </li>
                         </ul>
                     </div>
@@ -235,7 +240,7 @@
                         <form action="send.php" method="POST" class="footer__form">
                             <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
                             <input name="phone" type="tel" class="input footer__input" placeholder="Phone Number*">
-                            <textarea name="message" class="footer__message" placeholder="Message"></textarea>
+                            <textarea name="message" class="message footer__message" placeholder="Message"></textarea>
                             <button class="button footer__button" type="submit">Send</button>
                             <span class="footer__info">* Required Fields</span>
                         </form>

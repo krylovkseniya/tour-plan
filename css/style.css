@@ -135,6 +135,7 @@ img {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -237,6 +238,7 @@ img {
   font-size: 12px;
   line-height: 15px;
   margin: 0;
+  margin-top: 10px;
 }
 
 .hotel-grid {
@@ -289,6 +291,14 @@ img {
 
 .hotel-slider__wrapper {
   z-index: 22;
+}
+
+.hotel-back {
+  margin-top: 20px;
+  display: block;
+  max-width: 160px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .stars {
