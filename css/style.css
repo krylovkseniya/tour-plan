@@ -1923,22 +1923,8 @@ img {
   .packages-card__oldprice_one {
     margin-top: 24px;
   }
-  .modal__overlay {
-    display: none;
-  }
   .modal__dialog {
-    top: 0px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    -webkit-transform: none;
-            transform: none;
-    max-width: 100%;
-    padding: 33px 88px;
-  }
-  .modal__close {
-    right: 18px;
-    top: 17px;
+    padding: 23px 48px;
   }
 }
 
@@ -1949,13 +1935,13 @@ img {
   .reviews-slider__text {
     text-align: left;
   }
-  .modal__button {
-    min-width: 144px;
-  }
   .footer__button {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .modal__dialog {
+    padding: 23px 38px;
   }
 }
 /*# sourceMappingURL=style.css.map */
