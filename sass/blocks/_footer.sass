@@ -18,7 +18,7 @@
     &__categories
         grid-row: 1 / 4
     &__legal
-        padding-left: 48px
+        justify-self: end
     &__social
         &-network
             grid-row: 2 / 4
@@ -35,6 +35,7 @@
             grid-column: span 2
         &-form
             grid-column: span 2
+            max-width: 539px
     &__form
         display: flex
         align-items: center
@@ -62,7 +63,9 @@
         line-height: 160%
         color: $footer-text-color
         &_mb
-            margin-bottom: 20px
+            margin-bottom: 25px
+        &_ml
+            margin-left: 40px
     &__icon
         &-wrapper
             min-width: 40px
@@ -108,6 +111,17 @@
             position: absolute
             right: 0
             bottom: 0
+    &__tel
+        // display: block
+        font-size: 14px
+        line-height: 160%
+        color: inherit
+    &__mail
+        font-size: 14px
+        line-height: 160%
+        color: inherit
+
+
 
 
 

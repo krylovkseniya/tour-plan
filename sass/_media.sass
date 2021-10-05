@@ -1,3 +1,8 @@
+@media (max-width: 1440px)
+    .footer
+        &__legal
+            justify-self: start
+    
 @media (max-width: 1200px)
     .container
         max-width: 960px
@@ -113,11 +118,14 @@
                 grid-row: 3
                 margin-top: 20px
             &-form
-                grid-column: span 5
+                grid-column: span 6
                 grid-row: 4
+                max-width: 539px
         &__input
             flex-basis: 48%
+            max-width: 255px
         &-bottom
+            margin-top: 63px
             &__links
                 text-align: left
     .modal
@@ -298,11 +306,10 @@
                 grid-row: 7
         &__input
             flex-basis: 100%
+            max-width: 100%
         &__title
             &_mb
                 margin-bottom: 15px
-        &__button
-            order: 1
         &-bottom
             margin-top: 30px
             &__links
@@ -317,6 +324,9 @@
         &__icon
             &-wrapper
                 min-width: 24px
+        &__item
+            &_ml
+                margin-left: 24px
     .modal
         &__dialog
             padding: 23px 58px
@@ -418,3 +428,6 @@
     .modal
         &__button
             min-width: 144px
+    .footer
+        &__button
+            order: 1
