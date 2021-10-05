@@ -328,9 +328,11 @@
                     <span class="newsletter-title__strong">Newsletter</span>
                 </h2>
 
-                <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-                    <input name="email" type="email" class="subscribe__input" placeholder="Your email address">
+                <form action="send.php" method="POST" class="form subscribe newsletter__subscribe">
                     <button class="subscribe__button">Send</button>
+                    <div class="subscribe__input-group">
+                        <input name="email" required type="email" class="subscribe__input" placeholder="Your email address">
+                    </div>
                 </form>
             </div>
         </section>
@@ -570,9 +572,13 @@
 
                     <div class="footer__contact-form">
                         <h3 class="footer__title footer__title_mb">Send us a message</h3>
-                        <form action="send.php" method="POST" class="footer__form">
-                            <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
-                            <input name="phone" type="tel" class="input footer__input" placeholder="Phone Number*">
+                        <form action="send.php" method="POST" class="form footer__form">
+                            <div class="footer__input-group">
+                                <input name="name" required minlength="2" type="text" class="input footer__input" placeholder="Your Full Name*">
+                            </div>
+                            <div class="footer__input-group">
+                                <input name="phone" required type="tel" class="input footer__input phone" placeholder="Phone Number*">
+                            </div>
                             <textarea name="message" class="message footer__message" placeholder="Message"></textarea>
                             <button class="button footer__button" type="submit">Send</button>
                             <span class="footer__info">* Required Fields</span>
@@ -599,10 +605,10 @@
                 </div>
 
                 <h3 class="modal__title modal__title_mb">Booking</h3>
-                <form action="send.php" method="POST" class="modal__form">
-                    <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*">
-                    <input name="phone" type="tel" class="input modal__input" placeholder="Phone Number*">
-                    <input name="email" type="email" class="input modal__input" placeholder="Email*">
+                <form action="send.php" method="POST" class="form modal__form">
+                    <input name="name" required minlength="2" type="text" class="input modal__input" placeholder="Your Full Name*">
+                    <input name="phone" required type="tel" class="input modal__input phone" placeholder="Phone Number*">
+                    <input name="email" required type="email" class="input modal__input" placeholder="Email*">
                     <textarea name="message" class="message modal__message" placeholder="Message"></textarea>
                     <button class="button modal__button" type="submit">Send</button>
                     <span class="modal__info">* Required Fields</span>
@@ -611,10 +617,11 @@
         </div>
 
         <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/parallax.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

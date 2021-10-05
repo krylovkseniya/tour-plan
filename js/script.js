@@ -63,5 +63,25 @@ $(document).ready(function () {
 
 
   // Обработка форм
-  $('.modal__form').validate();
+  $(".form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Name must be at least 2 letters long",
+        },
+        email: {
+          required: "Specify your email address for contact",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Phone is required",
+        }
+      }
+    });
+  });
+
+  // Маска номера
+  $('.phone').mask('+7 (999) 999-99-90');
 });
