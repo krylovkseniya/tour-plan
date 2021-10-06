@@ -90,6 +90,7 @@ $(document).ready(function () {
   // Маска номера
   $('.phone').mask('+7 (999) 999-99-90');
 
-  // Modal
+  // Анимация
+  AOS.init();
 
 });

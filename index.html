@@ -8,22 +8,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/aos.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="navbar navbar_fixed">
             <div class="container">
                 <div class="navbar-top">
-                    <a href="index.html" class="logo">
+                    <a href="index.html" class="logo" data-aos="fade-left" data-aos-delay="100">
                         <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
                     </a>
-                    <form action="#" class="search navbar__search navbar__search_hidden">
+                    <form data-aos="fade-left" data-aos-delay="200" action="#" class="search navbar__search navbar__search_hidden">
                         <input type="text" class="search__input" placeholder="Search Location">
                         <button class="search__button">
                             <img src="img/search.svg" alt="Icon: search">
                         </button>
                     </form>
-                    <a href="#" class="user navbar__user navbar__user_hidden">
+                    <a href="#" data-aos="fade-left" data-aos-delay="300" class="user navbar__user navbar__user_hidden">
                         <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
                         <span class="user__name">Nathan</span>
                     </a>
@@ -415,26 +416,26 @@
             <div class="container">
                 <h2 class="activities__title">Other Activities</h2>
                 <div class="activities-wrapper">
-                    <div class="card activities__card activities__card_first">
+                    <div class="card activities__card activities__card_first" data-aos="fade-up" data-aos-delay="100">
                         <img src="img/activity-1.jpg" alt="The curious corner 
                         of chamarel" class="card__img">
                         <h3 class="card__title card__title_one">The curious corner of chamarel</h3>
                         <button class="card__button">Book Now</button>
                     </div>
-                    <div class="card activities__card">
+                    <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
                         <img src="img/activity-2.jpg" alt="Gymkhana club golf
                         course" class="card__img">
                         <h3 class="card__title card__title_two">Gymkhana club golf course</h3>
                         <button class="card__button">Book Now</button>
                     </div>
-                    <div class="card activities__card activities__card_second">
+                    <div class="card activities__card activities__card_second" data-aos="fade-up" data-aos-delay="500">
                         <img src="img/activity-3.jpg" alt="Tamarind falls hiking
                         trip - full day" class="card__img">
                         <h3 class="card__title card__title_three">Tamarind falls hiking
                             trip - full day</h3>
                         <button class="card__button">Book Now</button>
                     </div>
-                    <div class="card activities__card">
+                    <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
                         <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__img">
                         <h3 class="card__title card__title_four">The blue marine discovery quest</h3>
                         <button class="card__button">Book Now</button>
@@ -553,13 +554,18 @@
                                 <div class="footer__icon-wrapper">
                                     <img class="footer__icon" src="img/phone-call.svg" alt="Icon: phone">
                                 </div>
-                                <a class="footer__tel" href="tel:2691500">Tel (business hours) : 269&nbsp;1500 <br></a>
+                                Tel (business hours):&ensp;
+                                <a class="footer__tel" href="tel:2691500">269&nbsp;1500 <br></a>
                             </li>
                             <li class="footer__item footer__item_ml">
-                                <a href="tel:52566138" class="footer__tel">Tel (hotline) Monday - Saturday: 52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00 pm) <br></a>
+                                Tel (hotline) Monday - Saturday:&ensp;
+                                <a href="tel:52566138" class="footer__tel">52&#8209;56&#8209;61&#8209;38</a>
+                                &ensp;(08:00 am – 20:00 pm)
                             </li>
                             <li class="footer__item footer__item_mb footer__item_ml">
-                                <a href="tel:52566138" class="footer__tel">Tel (hotline) Sunday: 52&#8209;56&#8209;61&#8209;38 (08:00 am – 14:00 pm)</a>
+                                Tel (hotline) Sunday:&ensp;
+                                <a href="tel:52566138" class="footer__tel">52&#8209;56&#8209;61&#8209;38</a>
+                                &ensp;(08:00 am – 14:00 pm)
                             </li>
                             <li class="footer__item footer__item_mb">
                                 <div class="footer__icon-wrapper">
@@ -624,6 +630,7 @@
         <script src="js/parallax.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/jquery.mask.min.js"></script>
+        <script src="js/aos.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
