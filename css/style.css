@@ -1281,6 +1281,10 @@ img {
   opacity: 0;
 }
 
+.modal_open {
+  overflow: hidden;
+}
+
 .modal_active {
   visibility: visible;
   opacity: 1;
@@ -1308,6 +1312,8 @@ img {
   max-width: 478px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  overflow: auto;
+  height: 487px;
 }
 
 .modal__close {
@@ -1972,6 +1978,7 @@ img {
   }
   .modal__dialog {
     padding: 23px 48px;
+    min-width: 320px;
   }
 }
 
@@ -1998,9 +2005,6 @@ img {
   }
   .footer__info {
     margin-bottom: 15px;
-  }
-  .modal__dialog {
-    padding: 23px 38px;
   }
 }
 /*# sourceMappingURL=style.css.map */

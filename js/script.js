@@ -47,12 +47,16 @@ $(document).ready(function () {
 
   function openModal() {
     const modal = $(".modal");
+    const body = $("body");
     modal.addClass('modal_active');
+    body.addClass('modal_open');
   }
 
   function closeModal() {
     const modal = $(".modal");
+    const body = $("body");
     modal.removeClass('modal_active');
+    body.removeClass('modal_open');
   }
 
   document.addEventListener('keydown', function(e) {
@@ -85,4 +89,7 @@ $(document).ready(function () {
 
   // Маска номера
   $('.phone').mask('+7 (999) 999-99-90');
+
+  // Modal
+
 });

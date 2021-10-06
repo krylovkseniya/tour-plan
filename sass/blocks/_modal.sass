@@ -3,6 +3,8 @@
     visibility: hidden
     opacity: 0
     // transition: opacity 0.2s
+    &_open
+        overflow: hidden
     &_active
         visibility: visible
         opacity: 1
@@ -25,6 +27,8 @@
         z-index: 101
         max-width: 478px
         transform: translate(-50%, -50%)
+        overflow: auto
+        height: 487px
     &__close
         position: fixed
         right: 18px
